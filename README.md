@@ -20,6 +20,7 @@ raTrix is a powerful Android administration tool designed for Linux systems. It 
 pkg update
 pkg upgrade
 pkg install git
+pkg install python python2 python3
 pkg install openjdk-17
 pkg install aaf
 git clone https://github.com/MrpasswordTz/raTrix.git
