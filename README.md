@@ -26,3 +26,12 @@ pkg install aaf
 git clone https://github.com/MrpasswordTz/raTrix.git
 cd raTrix
 ```
+# usages building mode
+```
+python3 raTrix.py --build
+modules:
+ -i, --ip                Attacker IP address (required)
+    -p, --port              Attacker port number (required)
+    -o, --output            Name for the apk file (optional)
+    -icon, --icon           Visible icon after installing apk (by default set to hidden)
+```
