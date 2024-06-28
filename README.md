@@ -29,10 +29,20 @@ cd raTrix
 ```
 # usages building mode
 ```
-python3 raTrix.py --build
+python3 raTrix.py --build [models]
 modules:
  -i, --ip                Attacker IP address (required)
     -p, --port              Attacker port number (required)
     -o, --output            Name for the apk file (optional)
     -icon, --icon           Visible icon after installing apk (by default set to hidden)
 ```
+# Usages SHELL mode
+```
+Usage:
+  python3 androRAT.py --shell [modules]
+  modules:
+    -i, --ip                Listner IP address
+    -p, --port              Listner port number
+```
+# Disclaimer
+This tool is only for educational purposes, i will be responsible for any Damage
