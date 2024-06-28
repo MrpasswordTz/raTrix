@@ -4,6 +4,7 @@ raTrix is a powerful Android administration tool designed for Linux systems. It 
 # FEATURE FOR raTrix
 <ul>
   <li>light apk</li>
+  <li>shell and build mode</li>
   <li>it run background 24hrs</li>
   <li>it show device info,MAC Adress, device ip, simcard info</li>
   <li>Auto start backdoor</li>
