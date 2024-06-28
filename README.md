@@ -8,6 +8,7 @@ raTrix is a powerful Android administration tool designed for Linux systems. It 
   <li>it show device info,MAC Adress, device ip, simcard info</li>
   <li>Auto start backdoor</li>
   <li>sms viewing and callLogs viewing</li>
+  <li>microphone checking</li>
   <li>camera checking</li>
   <li>full persistent</li>
   <li>Easy To use</li>
