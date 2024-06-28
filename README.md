@@ -26,6 +26,7 @@ pkg install openjdk-17
 pkg install aaf
 git clone https://github.com/MrpasswordTz/raTrix.git
 cd raTrix
+pip install -r requirements.txt 
 ```
 # usages building mode
 ```
