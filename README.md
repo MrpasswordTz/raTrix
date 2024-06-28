@@ -15,4 +15,13 @@ raTrix is a powerful Android administration tool designed for Linux systems. It 
   <li>no icon</li>
 </ul>
 
- # installation 
+ # installation on termux
+```
+pkg update
+pkg upgrade
+pkg install git
+pkg install openjdk-17
+pkg install aaf
+git clone https://github.com/MrpasswordTz/raTrix.git
+cd raTrix
+```
