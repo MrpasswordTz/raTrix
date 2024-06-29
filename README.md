@@ -23,7 +23,7 @@ pkg upgrade
 pkg install git
 pkg install python python2 python3
 pkg install openjdk-17
-pkg install aaf
+pkg install aapt
 git clone https://github.com/MrpasswordTz/raTrix.git
 cd raTrix
 pip install -r requirements.txt 
