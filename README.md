@@ -45,7 +45,7 @@ modules:
 # Usages SHELL mode
 ```
 Usage:
-  python3 androRAT.py --shell [modules]
+  python3 raTrix.py --shell [modules]
   modules:
     -i, --ip                Listner IP address
     -p, --port              Listner port number
@@ -74,11 +74,11 @@ Usage:
 # Additional information in ngrok conf
 ```
 Usage:
-  python3 androRAT.py --build --ngrok [module]
+  python3 raTrix.py --build --ngrok [module]
   module:
     -p, --port              Attacker port number (optional by default its set to 8000)
     -o, --output            Name for the apk file (optional by default its set to "karma.apk")
     -icon, --icon           Visible icon after installing apk (by default set to hidden)
 ```
 # Disclaimer
-This tool is only for educational purposes, i will be responsible for any Damage
+This tool is only for educational purposes, i will not be responsible for any Damage
