@@ -19,7 +19,7 @@ clearDirec()
 #  ░░   ░   ░   ▒    ░        ░░   ░  ▒ ░ ░    ░  #
 #  ░           ░  ░           ░      ░   ░    ░  
                                                  
-#                                       - By MrpasswordTz
+# V2                                   - By MrpasswordTz
 
 
 parser = argparse.ArgumentParser(usage="%(prog)s [--build] [--shell] [-i <IP> -p <PORT> -o <apk name>]")
