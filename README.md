@@ -74,15 +74,6 @@ Example: python3 raTrix.py --shell -i 192.168.16.216 -p 443
     getMACAddress              --> returns the mac address of the device
     exit                       --> exit the interpreter
 ```
-# <u> Additional information in ngrok conf </u>
-```
-Usage:
-  python3 raTrix.py --build --ngrok [module]
-  module:
-    -p, --port              Attacker port number (optional by default its set to 8000)
-    -o, --output            Name for the apk file (optional by default its set to "bongosec.apk")
-    -icon, --icon           Visible icon after installing apk (by default set to hidden)
-```
 
 # Examples 
 <b>in buliding mode(generating apk)</b>
